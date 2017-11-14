@@ -1,0 +1,15 @@
+<div class="container">
+  <mat-card *ngFor="let chili of chilis">
+    <img class="user-logo" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTtVdP0foJg1ozwyVftdGMaLPpHTUPU2vD-E0GtHIP4RCdY0Toh" mat-card-sm-image>
+    <mat-card-title>{{ chili.user }}</mat-card-title>
+      <mat-card-content>
+        <p>
+          {{ chili.message }}
+        </p>
+      </mat-card-content>
+    <mat-card-actions>
+        <button mat-button>LIKE</button>
+        <button mat-button>SHARE</button>
+    </mat-card-actions>
+  </mat-card>
+</div>
